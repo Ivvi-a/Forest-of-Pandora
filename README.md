@@ -11,9 +11,9 @@
 
 ## Introduction
 ### Overview
-Pandora's Forest is an anonymous post-sharing service that anyone can use without hesitation. <br>
-Our team believes that many users want to share their trivial and secret stories and seek empathy. However, existing social media platforms require users to use fixed nicknames or share their IDs with people around them, making it difficult to guarantee complete anonymity. Moreover, traditional social media often favors users with a larger number of followers, leading to better communication and significant influence on the platform. <br>
-Therefore, we aim to create a post-sharing platform where users can share their stories and seek empathy without any burden by assigning random nicknames to each post and eliminating the need for followers or following.
+<p>Pandora's Forest is an anonymous post-sharing service that anyone can use without hesitation.</p>
+<p>Our team believes that many users want to share their trivial and secret stories and seek empathy. However, existing social media platforms require users to use fixed nicknames or share their IDs with people around them, making it difficult to guarantee complete anonymity. Moreover, traditional social media often favors users with a larger number of followers, leading to better communication and significant influence on the platform.</p>
+<p>Therefore, we aim to create a post-sharing platform where users can share their stories and seek empathy without any burden by assigning random nicknames to each post and eliminating the need for followers or following.</p>
 
 <!--
 판도라의 숲은 누구나 부담없이 사용할 수 있는 익명 글 공유 서비스입니다. <br>
@@ -23,8 +23,8 @@ Therefore, we aim to create a post-sharing platform where users can share their 
 
 
 ### Duration and Team
-Duration: 2024. 01. 08 - 2024. 04. 16 (6 weeks) <br>
-Team: 6 members
+<p>Duration: 2024. 01. 08 - 2024. 04. 16 (6 weeks)</p>
+<p>Team: 6 members</p>
 
 <br>
 
@@ -34,7 +34,7 @@ Team: 6 members
 | **FE** | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/redux--toolkit-593D88?style=flat&logo=redux&logoColor=white"/> |
 | **BE** | <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/amazons3-569A31?style=flat&logo=amazons3&logoColor=white"> |
 | **Infra** | <img src="https://img.shields.io/badge/amazonec2-FF9900?style=flat&logo=amazonec2&logoColor=white"> <img src="https://img.shields.io/badge/docker-2496ED?style=flat&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/nginx-009639?style=flat&logo=nginx&logoColor=white"> <img src="https://img.shields.io/badge/jenkins-D24939?style=flat&logo=jenkins&logoColor=white"> |
-| **IDE** | ![](https://img.shields.io/badge/VSCode(1.85.1)-3178C6?style=flat&logo=v&logoColor=white) ![](https://img.shields.io/badge/intelliJ_IDEA(2023.3.2)-F23920?style=flat&logo=intellij&logoColor=white) |
+| **IDE** | ![](https://img.shields.io/badge/VSCode-3178C6?style=flat&logo=v&logoColor=white) ![](https://img.shields.io/badge/intelliJ_IDEA-F23920?style=flat&logo=intellij&logoColor=white) |
 | **Tools** | <img src="https://img.shields.io/badge/gitlab-FC6D26?style=flat&logo=gitlab&logoColor=white"> <img src="https://img.shields.io/badge/jira-0052CC?style=flat&logo=jira&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=flat&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/swagger-85EA2D?style=flat&logo=swagger&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat&logo=figma&logoColor=white"> |
 
 <br>
@@ -44,40 +44,50 @@ Team: 6 members
 
 ## Features
 
-### Sign Up and Login
+<details>
+  <summary><h3>Sign Up and Login</h3></summary> 
+  <img src="assets/login.GIF"  width="300"/> <br>
+  - You can view posts without creating an account, but need to log in for interactive features. <br>
+  - By logging in with the Kakao Login API, you automatically create an account on your first login.
+    
+</details>
 
-| GIF | Description |
-| :---: | :--- |
-| <img src="assets/login.GIF"  width="300"/> | **Browse Posts Without Signing Up**   <br><br> - Users can browse posts without signing up.<br>- To use features like commenting, liking, and saving, logging in is required.<br><br><br><br> **Login** <br><br>- Utilizes the Kakao Login API.<br>- Upon first login, users are automatically signed up, and they can log out or delete their account afterward.|
+<details>
+  <summary><h3>Viewing Posts, Liking, and Saving</h3></summary> 
+  <img src="assets/save.GIF"  width="300"/> <br>
+  - Posts are displayed in an infinite scroll format, showing content, images, user info, and interaction stats, with a report option for inappropriate content. <br>
+  - You can increase the like count on posts you enjoy by clicking the like button. <br>
+  - You can bookmark posts you like for easy access later in the My Page section.
+    
+</details>
 
+<details>
+  <summary><h3>Registering, Editing, Deleting, and Temporarily Saving Posts</h3></summary> 
+  <img src="assets/writing.GIF"  width="300"/> <br>
+  - Register post content along with up to 5 images, with a text limit of 500 characters. <br>
+  - Edit or delete your own posts as needed. <br>
+  - Temporarily save a post you’re writing, including images, and retrieve it later.
+    
+</details>
 
-### Viewing Posts, Liking, and Saving
+<details>
+  <summary><h3>Comments and Replies</h3></summary> 
+  <img src="assets/reply.GIF"  width="300"/>  <br>
+  - Each post shows random nicknames and profile pictures for comments, and authors get notified when comments are made. <br>
+  - Inappropriate comments can be reported, and users can edit or delete their own comments. <br>
+  - You can reply to comments, and original authors are notified, with the ability to report, edit, or delete their replies.
+    
+</details>
 
-| GIF | Description |
-| :---: | :--- |
-| <img src="assets/save.GIF"  width="300"/> | **Viewing Posts**   <br><br> - Posts are displayed in a short format using infinite scroll.<br>- Users can see the content, images, profile pictures, nicknames, posting dates, save status, like status, number of likes, and number of comments.<br>- Clicking the image enlargement icon in the upper right corner of the post allows users to view the associated images.<br>- Inappropriate posts can be reported using the report button.<br><br><br> **Liking Posts**   <br><br> - Users can increase the like count for posts they resonate with by clicking the like button.<br><br><br> **Saving Posts**  <br><br> - Users can save posts they like by clicking the bookmark button.<br>- Saved posts can be accessed in the My Page section.|
+<details>
+  <summary><h3>My Page</h3></summary> 
+  <img src="assets/myWriting.GIF"  width="300"/> <br>
+  - You can view your posts sorted by writing date, along with content, images, posting dates, like counts, and comment counts. <br>
+  - You can access a list of your saved posts sorted by date, including content, images, posting dates, and author nicknames.
+    
+</details>
 
-
-### Registering, Editing, Deleting, and Temporarily Saving Posts
-
-| GIF | Description |
-| :---: | :--- |
-| <img src="assets/writing.GIF"  width="300"/> | **Registering Posts**   <br><br> - Users can register post content and images.<br>- A maximum of 5 images can be uploaded, and the text is limited to 500 characters.<br>- A new nickname and profile picture are randomly assigned each time a post is registered.<br><br><br> **Editing Posts**   <br><br> - Users can edit their own posts.<br>- Text is limited to 500 characters.<br><br><br> **Deleting Posts**  <br><br>- Users can delete their own posts.<br><br><br> **Temporarily Saving Posts**  <br><br> - Users can temporarily save a post they are writing and retrieve it later.<br>- Images can also be temporarily saved.|
-
-
-### Comments and Replies
-
-| GIF | Description |
-| :---: | :--- |
-| <img src="assets/reply.GIF"  width="300"/> | **Comments**   <br><br> - Each post displays random nicknames and profile pictures for comments.<br>- When a comment is made, the post author receives a notification.<br>- Inappropriate comments can be reported using the report button.<br>- Users can edit and delete their own comments.<br><br><br> **Replies**   <br><br> - Users can reply to existing comments.<br>- When a reply is made, the original comment's author receives a notification.<br>- Inappropriate replies can be reported using the report button.<br>- Users can edit and delete their own replies.|
-
-
-### My Page
-
-| GIF | Description |
-| :---: | :--- |
-| <img src="assets/myWriting.GIF"  width="300"/> | **My Posts**   <br><br> - Users can view their posts in descending order by the date of writing.<br>- They can check post content, images, posting dates, like counts, and comment counts.<br><br><br> **My Saved Posts**   <br><br> - Users can view a list of their saved posts in descending order by date.<br>- They can check post content, images, posting dates, and author nicknames.|
-
+<br>
 
 [back to top](#index)
 <br>
