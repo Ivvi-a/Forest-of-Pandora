@@ -23,7 +23,7 @@
 
 
 ### Duration and Team
-<p>Duration: 2024. 01. 08 - 2024. 04. 16 (6 weeks)</p>
+<p>Duration: 2024. 01. 08 - 2024. 02. 16 (6 weeks)</p>
 <p>Team: 6 members</p>
 
 <br>
